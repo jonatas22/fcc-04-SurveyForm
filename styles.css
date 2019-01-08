@@ -50,6 +50,7 @@ span.required {
     font-size: .6rem;
     margin-top: -5px;
     color: red;
+    vertical-align: top;
 }
 
 legend {
