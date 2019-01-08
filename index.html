@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Survey Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    </head>
+    <body>
+        <h1 id="title">Survey Form </h1>
+        <div id="form-content">
+            <p id="description">This is a form developed as part of the FreeCodeCamp Curriculum</p>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label for="name" id="name-label"><span class="required">*</span> Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label"><span class="required">*</span> Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email"required />
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label"><span class="required">*</span> Age:</label>
+                    <input type="number" id="number" placeholder="Age" min="8" max="99" required  />
+                </div>
+                <div class="form-group">                    
+                    <fieldset id="group_radio">
+                        <legend>How likely is that you would recommend freeCodeCamp to a friend? </legend>
+                        <div>
+                            <input type="radio" id="choice1" value="Definitely" name="group_radio">
+                            <label for="choice1">Definitely</label><br>
+                        </div>                        
+                        <div>
+                            <input type="radio" id="choice2" value="Maybe" name="group_radio">
+                            <label for="choice2">Maybe</label><br>
+                        </div>
+                        <div>
+                            <input type="radio" id="choice3" value="Not sure" name="group_radio">
+                            <label for="choice3">Not sure</label><br>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">                    
+                    <fieldset>
+                        <legend>What do you like most in Free Code Camp: </legend>
+                        <select id="dropdown" >
+                            <option selected>Student</option>
+                            <option>Full Time Learner</option>
+                            <option>Prefer not to say</option>
+                            <option>Other</option>
+                        </select>
+                    </fieldset>
+                </div>
+                <div class="form-group">                    
+                    <fieldset id="group_checkboxes">
+                        <legend>Things that should be improved in the future (Check all that apply): </legend>
+                        <div><label><input type="checkbox" name="group_checkboxes" value="Front-end Projects">Front-end Projects</label></div>
+                        <div><label><input type="checkbox" name="group_checkboxes" value="Back-end Projects">Back-end Projects</label></div>
+                        <div><label><input type="checkbox" name="group_checkboxes" value="Data Visualization">Data Visualization</label></div>
+                        <div><label><input type="checkbox" name="group_checkboxes" value="Challenges">Challenges</label></div>
+                        <div><label><input type="checkbox" name="group_checkboxes" value="Open Source Community">Open Source Community</label></div>
+                        <div><label><input type="checkbox" name="group_checkboxes" value="Gitter help rooms">Gitter help rooms</label></div>
+                        <div><label><input type="checkbox" name="group_checkboxes" value="Videos">Videos</label></div>
+                        <div><label><input type="checkbox" name="group_checkboxes" value="City Meetups">City Meetups</label></div>
+                        <div><label><input type="checkbox" name="group_checkboxes" value="Wiki">Wiki</label></div>
+                        <div><label><input type="checkbox" name="group_checkboxes" value="Forum">Forum</label></div>
+                        <div><label><input type="checkbox" name="group_checkboxes" value="Additional Courses">Additional Courses</label></div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Any Comments or Suggestions?</legend>
+                        <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+                    </fieldset>
+                </div>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+body {
+    font-family: Roboto;
+    background-color: #ea782763;
+    /* background-color: #2799ea2e; */
+}
+
+#title {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#form-content {
+    width: 50%;
+    min-width: 370px;
+    margin: 0 auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+                0 1px 6px rgba(0, 0, 0, 0.23);
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border-width: thin;
+    border-radius: 3px;
+    border-style: solid;
+}
+
+label {
+    padding-right: 10px;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+input, select {
+    padding: 8px 4px;
+    border-radius: 2px;
+    border: 1px solid #bbbbbb;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    width: 60%
+}
+
+span.required {
+    font-size: .6rem;
+    margin-top: -5px;
+    color: red;
+}
+
+legend {
+    color: white;
+    background-color: #2799ea;
+    padding: 3px 5px;
+    border-radius: 4px;
+}
+
+
+#description {
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+}
+
+textarea {
+    width: 50%;
+    min-height: 70px;
+}
+
+button {
+    border: 2px solid #FD964F;
+    padding: 7px;
+    color: white;
+    background-color: #FD964F;
+    border-radius: 3px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #fd964fbf;
+    border-color: #fd964fbf;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    label {
+        margin-bottom: 8px;
+    }
+    label[for="comments"], label[for="name"], label[for="email"], label[for="number"]   {
+        display: block;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: 95%
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
